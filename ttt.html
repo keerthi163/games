@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="ttt1.css">
+</head>
+<body>
+   <div class="wrapper">
+       <p id = "msg" text-align="center"> let's play</p><br><br>
+       <div class="container">
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+       </div>
+       <button id="restart">Restart</button>
+   </div>
+   <!-- <a href="game.html"><img src="b4.png" id="img"></a> -->
+   <div class="popup hide">
+       <p id="message">Sample Message</p>
+       <button id="new-game">New Game</button>
+   </div>
+   <a href="game.html"><img src="b8.jpg" id="img"></a>
+   <img src="play.png" id="m">
+        <audio id="mysong">
+            <source src="music.mp3" type="audio/mp3">
+        </audio>
+        <script>
+           var mysong=document.getElementById('mysong');
+           var icon=document.getElementById("m");
+           icon.onclick=function(){
+              if(mysong.paused){
+                mysong.play();
+                icon.src="pause.png";
+              }
+              else{
+                mysong.pause();
+                icon.src="play.png";
+              }
+           }
+    
+        </script>
+            
+   
+    <!-- Script -->
+    <script src="scriptss.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="game_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Combo&display=swap" rel="stylesheet">
+</head>
+<body style="text-align: center;" id="a">
+    <h1 id="b1">Pick your game!</h1>
+    <h1><a href="home.html"><img src="b8.jpg" id="img"></a></h1>
+    
+    <div class="maincontainer">
+
+        <h1 class="thecard1">
+
+            <div class="thefront1">
+                <img src="rps_img.webp" id="img1">
+                
+            </div>
+            <div class="theback1">
+               <a href="rps.html" id="a1">A classic game - Rock, Paper, Scissors! Choose one of the three choices - and see if you can beat the computer.<button id="b">PLAY</button></a>
+            </div>
+        </h1>
+
+
+        <h1 class="thecard2"> 
+            <div class="thefront2">
+                <img src="ttt_img.jpg" id="img1">
+                
+            </div>
+            <div class="theback2">
+              <a href="ttt.html" id="a1">Train your brain in this noughts and crosses game. Try to get 3 of your symbols in a row to beat your computer opponent.<button id="b">PLAY</button></a>
+            </div>
+        </h1>
+
+
+        <h1 class="thecard3">
+    
+            <div class="thefront3">
+                <img src="num_img.png" id="img1">
+                
+            </div>
+            <div class="theback3">
+                <a href="number.html" id="a1">Guess the secret number. If your guess is too high or too low, you'll get a hint.<button id="b">PLAY</button></a>
+            </div>
+        </h1> 
+        <img src="play.png" id="m">
+        <audio id="mysong">
+            <source src="music.mp3" type="audio/mp3">
+        </audio>
+        <script>
+           var mysong=document.getElementById('mysong');
+           var icon=document.getElementById("m");
+           icon.onclick=function(){
+              if(mysong.paused){
+                mysong.play();
+                icon.src="pause.png";
+              }
+              else{
+                mysong.pause();
+                icon.src="play.png";
+              }
+           }
+    
+        </script>
+            
+    </div>
+
+  </body>
+</html>

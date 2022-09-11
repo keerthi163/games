@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="num_style.css">
+</head>
+<body style="text-align: center">
+    <img src="r1.png">
+    <div id="d">
+    <a href="easy.html" id="a1"><img src="l1.jpg" id="i1"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="medium.html" id="a1"><img src="l2.jpg" id="i1"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="hard.html" id="a1"><img src="l3.jpg" id="i1"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <br>
+    <a href="game.html"><img src="b8.jpg" id="img"></a>
+    <img src="play.png" id="m">
+        <audio id="mysong">
+            <source src="music.mp3" type="audio/mp3">
+        </audio>
+        <script>
+           var mysong=document.getElementById('mysong');
+           var icon=document.getElementById("m");
+           icon.onclick=function(){
+              if(mysong.paused){
+                mysong.play();
+                icon.src="pause.png";
+              }
+              else{
+                mysong.pause();
+                icon.src="play.png";
+              }
+           }
+    
+        </script>
+            
+</body>
+</html>

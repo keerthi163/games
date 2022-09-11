@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="guessnumber.css">
+</head>
+<body>
+    <div class="container">
+        <img src="img6.jpg" id="img" style="align-content: center;">
+        <div id = "row_1" text-align="center">
+            <h3>I am thinking of a number between 1-50.</h3>
+            <h3>Can you guess it?</h3>
+            </div>
+        <input type="text" placeholder="number" id="inputtext"><br>
+        <div>
+        <button onclick="Hardguessing()" id="my_btn">GUESS</button>
+        <a href="hard.html"><button id="my_btn">RESET</button></a>
+        <button onclick = "document.getElementById('inputtext').value = ''" id="my_btn">CLEAR</button>
+        </div>
+        <p id="message1">No. of Guesses: 0</p>
+    </div>
+    <br>
+    <br>
+    <a href="number.html"><img src="b8.jpg" id="img"></a>
+    <script src="Hardguessing.js"></script>
+</body>
+</html>

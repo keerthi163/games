@@ -1,0 +1,199 @@
+*#a{
+    background:linear-gradient(to right,rgb(237, 88, 237),rgb(90, 100, 243));
+    background-attachment: fixed;
+}
+#b1{
+    color: black;
+    font-size: 60px;
+    font-family: 'Combo', cursive;
+    color:#2e0434;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+}
+#b{
+    background: rgb(117, 169, 223);
+    width: 2cm;
+    height: 1.5cm;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    right: 33%;
+
+}
+#img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2cm;
+    height: 1.5cm;
+}
+#m{
+    float:left;
+    margin-left: 3%;
+    margin-top:400px;
+    height: 1.5cm;
+    width: 1.5cm;
+    cursor: pointer;
+
+   
+}
+#a1{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(237, 88, 237);
+}
+
+/* THE MAINCONTAINER HOLDS EVERYTHING */
+.maincontainer{
+position:absolute;
+width: 250px;
+height: 320px;
+background: none;
+top: 50%;
+left: 10%;
+transform: translate(-50%, -50%);
+}
+
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+.thecard1{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: 10px;
+transform-style: preserve-3d;
+transition: all 0.8s ease;
+margin-left: 150px;
+margin-right: 150px;
+}
+#img1{
+    border: none;
+     width: 80%;
+     height: 80%;
+    padding: 30px;
+    
+}
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+.thecard1:hover{
+transform: rotateY(180deg);
+}
+.thecard2{
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    margin-left: 350px;
+    margin-right: 250px;
+    }
+    
+    .thecard2:hover{
+    transform: rotateY(180deg);
+    }
+    .thecard3{
+        position: absolute;
+        top: 0%;
+        left: 200%;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        transform-style: preserve-3d;
+        transition: all 0.8s ease;
+        margin-left: 550px;
+        margin-right: 450px;
+        }
+        
+        .thecard3:hover{
+        transform: rotateY(180deg);
+        }
+    
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+.thefront1{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: 10px;
+backface-visibility: hidden;
+overflow: hidden;
+background: #000;
+color: #000;
+}
+
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.theback1{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: 10px;
+backface-visibility: hidden;
+overflow: hidden;
+background: #000;
+color: #000;
+align-items: center;
+transform: rotateY(180deg);
+}
+.thefront2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #000;
+    color: #000;
+    }
+    
+    /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+    .theback2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #000;
+    color: #000;
+    text-align: center;
+    transform: rotateY(180deg);
+    }
+    
+    .thefront3{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        backface-visibility: hidden;
+        overflow: hidden;
+        background: #000;
+        color: #000;
+        }
+        
+        /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+        .theback3{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        backface-visibility: hidden;
+        overflow: hidden;
+        background: #000;
+        color: #000;
+        text-align: center;
+        transform: rotateY(180deg);
+        }
