@@ -6,7 +6,7 @@ function Easyguessing(){
     if( computer == user ){
         document.getElementById("inputtext").style.border = 'solid 4px green';
         count++;
-        msg1.textContent = count + "  Choises used to guess the number";
+        msg1.textContent = count + "  Choices used to guess the number";
     }
     else if( computer > user ){
         document.getElementById("inputtext").style.border = 'solid 4px blue';
